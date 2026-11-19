@@ -1,0 +1,7 @@
+build*/
+out/
+__pycache__/
+.vs/
+.vscode/
+scripts/toolchain.local.json
+*.user

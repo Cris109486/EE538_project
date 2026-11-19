@@ -1,0 +1,9 @@
+{
+  "summary": {"makespan_us": 3000, "batches": 3, "completed": 1, "cancelled": 0, "generated_tokens": 2, "dynamic_j": 0.5, "background_j": 0.003, "total_j": 0.503, "deadline_met": true, "peak_kv_tokens": 6, "final_kv_tokens": 0},
+  "request": {"id": "r1", "state": "completed", "prefilled": 4, "generated": 2, "admitted_us": 0, "first_token_us": 2000, "completed_us": 3000, "cancelled_us": null},
+  "batches": [
+    {"start_us": 0, "end_us": 1000, "prefill_tokens": 2, "decode_tokens": 0},
+    {"start_us": 1000, "end_us": 2000, "prefill_tokens": 2, "decode_tokens": 0},
+    {"start_us": 2000, "end_us": 3000, "prefill_tokens": 0, "decode_tokens": 1}
+  ]
+}
