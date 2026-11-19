@@ -26,6 +26,8 @@ Policies cannot receive `Workload` or `RequestInput`. Future arrivals, realized 
 Time: signed 64-bit integer microseconds (`*_us`); tokens/KV: signed 64-bit integer token slots; energy: double joules; power: double watts. No token-to-byte claim is made.
 Time zero is the experiment origin. Makespan and background-energy horizon start at zero, including idle time before the first arrival, and end when all requests have terminal visible states.
 
+Open integration issue found while connecting the existing team repository: the earlier root README defines completed-workload makespan from the first arrival to final completion. The zero-origin behavior above describes the current implementation only and is not a team-confirmed replacement of that earlier definition. Align duration and background-energy reporting before comparative evaluation; no execution change is included in the repository merge.
+
 JSON schema version is 1; see `examples/hand_calculated.json`. Token counts, times and seed must be JSON integers. Numeric configuration bounds are enforced before simulation. Prompt and maximum output lengths are positive; actual output length may be zero and cannot exceed the maximum. Every request must fit the KV capacity in isolation; otherwise input is rejected even if it has a cancellation event.
 
 Known unsupported case: zero-length prompts. Rejecting them is a documented input-domain choice for team review, not a claim that real LLM systems cannot accept them.
