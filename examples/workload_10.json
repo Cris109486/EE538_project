@@ -1,0 +1,136 @@
+{
+  "schema_version": 1,
+  "seed": 538,
+  "deadline_us": 1000000000,
+  "aging_us": 100000,
+  "background_w": 1.0,
+  "history_capacity": 4,
+  "resources": {
+    "kv_capacity_tokens": 256,
+    "max_batch_tokens": 32,
+    "chunk_sizes": [
+      4,
+      8,
+      16,
+      32
+    ]
+  },
+  "requests": [
+    {
+      "id": "r0",
+      "agent": "agent0",
+      "arrival_us": 554,
+      "dependencies": [],
+      "prompt_tokens": 22,
+      "max_output_tokens": 5,
+      "actual_output_tokens": 4
+    },
+    {
+      "id": "r1",
+      "agent": "agent1",
+      "arrival_us": 637,
+      "dependencies": [],
+      "prompt_tokens": 14,
+      "max_output_tokens": 12,
+      "actual_output_tokens": 6
+    },
+    {
+      "id": "r2",
+      "agent": "agent2",
+      "arrival_us": 1740,
+      "dependencies": [],
+      "prompt_tokens": 61,
+      "max_output_tokens": 7,
+      "actual_output_tokens": 2
+    },
+    {
+      "id": "r3",
+      "agent": "agent0",
+      "arrival_us": 3407,
+      "dependencies": [],
+      "prompt_tokens": 64,
+      "max_output_tokens": 24,
+      "actual_output_tokens": 5
+    },
+    {
+      "id": "r4",
+      "agent": "agent1",
+      "arrival_us": 4197,
+      "dependencies": [],
+      "prompt_tokens": 51,
+      "max_output_tokens": 4,
+      "actual_output_tokens": 4
+    },
+    {
+      "id": "r5",
+      "agent": "agent2",
+      "arrival_us": 5024,
+      "dependencies": [],
+      "prompt_tokens": 30,
+      "max_output_tokens": 8,
+      "actual_output_tokens": 5
+    },
+    {
+      "id": "r6",
+      "agent": "agent0",
+      "arrival_us": 5959,
+      "dependencies": [],
+      "prompt_tokens": 20,
+      "max_output_tokens": 18,
+      "actual_output_tokens": 16
+    },
+    {
+      "id": "r7",
+      "agent": "agent1",
+      "arrival_us": 7181,
+      "dependencies": [],
+      "prompt_tokens": 63,
+      "max_output_tokens": 30,
+      "actual_output_tokens": 15
+    },
+    {
+      "id": "r8",
+      "agent": "agent2",
+      "arrival_us": 8182,
+      "dependencies": [],
+      "prompt_tokens": 57,
+      "max_output_tokens": 9,
+      "actual_output_tokens": 5
+    },
+    {
+      "id": "r9",
+      "agent": "agent0",
+      "arrival_us": 9599,
+      "dependencies": [],
+      "prompt_tokens": 59,
+      "max_output_tokens": 7,
+      "actual_output_tokens": 2
+    }
+  ],
+  "execution_profile": {
+    "prediction": {
+      "overhead_us": 0,
+      "prefill_us": 500,
+      "decode_us": 1000,
+      "sequence_us": 0,
+      "context_us": 0,
+      "launch_j": 0,
+      "prefill_j": 0.1,
+      "decode_j": 0.1,
+      "quadratic_j": 0,
+      "context_j": 0
+    },
+    "execution": {
+      "overhead_us": 0,
+      "prefill_us": 500,
+      "decode_us": 1000,
+      "sequence_us": 0,
+      "context_us": 0,
+      "launch_j": 0,
+      "prefill_j": 0.1,
+      "decode_j": 0.1,
+      "quadratic_j": 0,
+      "context_j": 0
+    }
+  }
+}

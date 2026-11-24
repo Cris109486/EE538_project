@@ -1,0 +1,52 @@
+{
+    "schema_version": 1,
+    "seed": 538,
+    "deadline_us": 3000,
+    "aging_us": 100000,
+    "background_w": 1.0,
+    "history_capacity": 4,
+    "resources": {
+        "kv_capacity_tokens": 6,
+        "max_batch_tokens": 2,
+        "chunk_sizes": [
+            2
+        ]
+    },
+    "requests": [
+        {
+            "id": "r1",
+            "agent": "agent1",
+            "arrival_us": 0,
+            "dependencies": [],
+            "prompt_tokens": 4,
+            "max_output_tokens": 2,
+            "actual_output_tokens": 2
+        }
+    ],
+    "execution_profile": {
+        "prediction": {
+            "overhead_us": 0,
+            "prefill_us": 500,
+            "decode_us": 1000,
+            "sequence_us": 0,
+            "context_us": 0,
+            "launch_j": 0,
+            "prefill_j": 0.1,
+            "decode_j": 0.1,
+            "quadratic_j": 0,
+            "context_j": 0
+        },
+        "execution": {
+            "overhead_us": 0,
+            "prefill_us": 500,
+            "decode_us": 1000,
+            "sequence_us": 0,
+            "context_us": 0,
+            "launch_j": 0,
+            "prefill_j": 0.1,
+            "decode_j": 0.1,
+            "quadratic_j": 0,
+            "context_j": 0
+        }
+    }
+}
